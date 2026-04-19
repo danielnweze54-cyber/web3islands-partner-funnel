@@ -97,7 +97,29 @@
       margin-top: 10px;
     }
   </style>
-</head>
+</head><script>
+async function connectWallet() {
+  try {
+    if (!window.ethereum) {
+      alert("MetaMask not detected. Please install MetaMask.");
+      return;
+    }
+
+    const accounts = await window.ethereum.request({
+      method: "eth_requestAccounts"
+    });
+
+    const account = accounts[0];
+
+    document.getElementById("walletAddress").innerText =
+      "Connected: " + account.slice(0, 6) + "..." + account.slice(-4);
+
+  } catch (error) {
+    console.error(error);
+    alert("Wallet connection failed.");
+  }
+}
+</script>
 
 <body>
 
@@ -113,6 +135,11 @@
 
       <div class="badge">⚡ Limited early partner access</div>
     </div>
+    <button class="btn" onclick="connectWallet()">
+  Connect Wallet
+</button>
+
+<p id="walletAddress" style="margin-top:10px; color:#22c55e;"></p>
 
     <!-- VALUE -->
     <div class="section">
@@ -136,6 +163,10 @@
         <p>3. Share and earn commissions</p>
       </div>
     </div>
+    <div class="section">
+  <h2>How Much Can You Earn?</h2>
+  <p>Earn commissions by referring users to Web3 tools. The more you share, the more you earn.</p>
+    </div>
 
     <!-- CTA -->
     <div class="section">
@@ -143,7 +174,7 @@
         <h2>Ready to Start Earning?</h2>
         <p>Join Web3islands today and turn your network into income.</p>
 
-        <a href="#" class="btn">Become a Partner Now</a>
+        <a href="https://t.me/bigdan" class="btn">Become a Partner Now</a>
       </div>
     </div>
 
