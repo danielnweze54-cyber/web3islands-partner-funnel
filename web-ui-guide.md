@@ -88,6 +88,13 @@ The UI reflects:
 - current active step
 - completed steps
 
+### Example UI Flow
+
+User clicks "Run"  
+→ Step 1 becomes "Running"  
+→ Guardrail shows "Validated"  
+→ Final status: Success
+
 This makes execution **traceable and transparent**.
 
 ---
