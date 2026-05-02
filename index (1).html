@@ -139,18 +139,13 @@ p {
   gap: 24px;
 }
 
-.card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 28px;
-  border-radius: 18px;
+.card:class="bg-neutral-900 p-4 rounded-xl
+  border border-white/10
   transition: 0.25s;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  border-color: #7C3AED;
-}
+.card:hover:scale-105 transition"
+
 
 /* HOW IT WORKS */
 .steps {
@@ -185,28 +180,22 @@ p {
 <body>
 
 <!-- HERO -->
-<section class="hero container">
-  <div class="badge">Partner Program</div>
-
-  <h1>
-    Turn Attention Into <span class="gradient-text">Users & Growth</span>
+<section class="text-center py-20">
+  <h1 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text">
+    Build & Launch Web3 Products Faster
   </h1>
 
-  <p>
-    Web3islands lets your project get real exposure inside a gamified ecosystem — where players drive traffic, engagement, and conversions.
+  <p class="mt-4 text-neutral-400 max-w-xl mx-auto">
+    We help teams turn complex Web3 ideas into clear, high-converting user experiences.
   </p>
 
-  <div>
-    <a href="#" class="btn btn-primary">Apply as a Partner →</a>
-    <a href="#" class="btn btn-secondary"></a>
-  </div>
-</section><section class="container">
-  <h2>Why partner with Web3islands</h2>
-
-  <div style="margin-top:20px; line-height:1.8;">
-    <p>• Get targeted traffic from active players</p>
-    <p>• Collaborate with Web3 projects</p>
-    <p>• Monetize through ecosystem interactions</p>
+  <div class="mt-6 space-x-4">
+    <button class="bg-blue-500 px-6 py-2 rounded hover:bg-blue-400">
+      Apply Now
+    </button>
+    <button class="border border-white/20 px-6 py-2 rounded hover:bg-white/10">
+      View Demo
+    </button>
   </div>
 </section>
 
@@ -248,68 +237,60 @@ p {
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="container">
-  <h2>Simple 3-Step Onboarding</h2>
+<section class="py-16">
+  <h2 class="text-2xl font-bold text-center mb-10">How It Works</h2>
 
-  <div class="steps">
-    <div class="step">
-      <span>01</span>
-      <h3>Apply</h3>
-      <p>Tell us about your project and goals.</p>
+  <div class="grid md:grid-cols-4 gap-6">
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      <p>1. Apply</p>
     </div>
-
-    <div class="step">
-      <span>02</span>
-      <h3>Integrate</h3>
-      <p>We place your project inside the ecosystem.</p>
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      <p>2. We Review</p>
     </div>
-
-    <div class="step">
-      <span>03</span>
-      <h3>Grow</h3>
-      <p>Players bring traffic, engagement, and visibility.</p>
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      <p>3. Build UI</p>
+    </div>
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      <p>4. Launch</p>
     </div>
   </div>
 </section>
 
 <!-- PRODUCT EXPLANATION -->
-<section class="container">
-  <h2>What Makes Web3islands Different</h2>
+<section class="py-16 text-center">
+  <h2 class="text-2xl font-bold mb-4">Why Web3islands</h2>
 
-  <p>
-    Instead of traditional ads, Web3islands turns users into promoters.  
-    Players own in-game houses where they can showcase and drive traffic to partner projects.
+  <p class="text-neutral-400 max-w-xl mx-auto">
+    We focus on clarity, conversion, and making complex Web3 flows easy for users.
   </p>
 </section>
 
 <!-- USE CASES -->
-<section class="container">
-  <h2>Who This Is For</h2>
+<section class="py-16">
+  <h2 class="text-2xl font-bold text-center mb-10">What We Build</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Web3 Startups</h3>
-      <p>Launch and gain traction quickly.</p>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      DeFi Dashboards
     </div>
-
-    <div class="card">
-      <h3>Communities</h3>
-      <p>Expand your reach and engagement.</p>
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      NFT Platforms
     </div>
-
-    <div class="card">
-      <h3>Protocols</h3>
-      <p>Drive awareness and real usage.</p>
+    <div class="bg-neutral-900 p-4 rounded-xl">
+      Web3 Landing Pages
     </div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
-<section class="cta container">
-  <h2>Start Growing With Web3islands</h2>
-  <p>Apply now and become part of the ecosystem</p>
+<section class="py-20 text-center">
+  <h2 class="text-3xl font-bold mb-4">
+    Ready to build something real?
+  </h2>
 
-  <a href="#" class="btn btn-primary">Apply Now</a>
+  <button class="bg-blue-500 px-6 py-3 rounded hover:bg-blue-400">
+    Apply Now
+  </button>
 </section>
 
 </body>
