@@ -46,12 +46,20 @@
   .section {
     margin-top: 70px;
   }
+  .section-dark {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(12px);
+  }
 
   .card {
     background: #1f2937;
     padding: 20px;
     border-radius: 12px;
     margin-top: 20px;
+  }
+  .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
   }
 
   input {
@@ -84,16 +92,24 @@
 
     <p class="small">We will review your application and contact you via Telegram, WhatsApp or Email.</p>
   </div>
+  <div class="hero-preview">
+  <div class="preview-card">
+    <h3>Partner Dashboard</h3>
+    <p>Active Referrals: 128</p>
+    <p>Revenue Generated: $12,450</p>
+    <p>Status: Approved Partner</p>
+  </div>
+  </div>
 
   <!-- VALUE -->
   <div class="section">
-    <h2>Why Join?</h2>
+    <h2>Why Builders Join Web3islands</h2>
 
-    <div class="card">🌍 Work with a global Web3 ecosystem</div>
-    <div class="card">🚀 Promote high-demand digital tools</div>
-    <div class="card">💰 Build income through partnerships</div>
-    <div class="card">🤝 Get direct access to the team</div>
-  </div>
+    <div class="feature-card">
+  <div class="icon">🌍</div>
+  <h3>Global Ecosystem</h3>
+  <p>Connect with builders, founders, and Web3 communities worldwide.</p>
+    </div>
 
   <!-- HOW IT WORKS -->
   <div class="section">
@@ -107,7 +123,7 @@
   <!-- FORM -->
   <div class="section" id="form">
     <h2>Apply as a Partner</h2>
-
+Apply → Review → Partner Access → Earn Rewards
     <form onsubmit="submitForm(event)">
       <input type="text" id="name" placeholder="Full Name" required><br>
       <input type="email" id="email" placeholder="Email Address" required><br>
